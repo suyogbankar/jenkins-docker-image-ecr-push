@@ -22,9 +22,7 @@ pipeline {
         stage('Cloning Git') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']],
-                    doGenerateSubmoduleConfigurations: false,
                     extensions: [],
-                    submoduleCfg: [],
                     userRemoteConfigs: [[credentialsId: 'AKIA25MQMAIWTAEVR66W', url: 'https://github.com/suyogbankar/jenkins-docker-image-ecr-push.git']]
                 ])
             }
