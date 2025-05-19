@@ -25,7 +25,7 @@ pipeline {
                     doGenerateSubmoduleConfigurations: false,
                     extensions: [],
                     submoduleCfg: [],
-                    userRemoteConfigs: [[credentialsId: 'jenkins-project', url: 'https://github.com/suyogbankar/jenkins-docker-image-ecr-push.git']]
+                    userRemoteConfigs: [[credentialsId: 'AKIA25MQMAIWTAEVR66W', url: 'https://github.com/suyogbankar/jenkins-docker-image-ecr-push.git']]
                 ])
             }
         }
