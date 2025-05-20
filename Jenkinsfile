@@ -25,7 +25,7 @@ pipeline {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                     extensions: [],
-                    userRemoteConfigs: [[credentialsId: 'aws-ecr-project', url: 'https://github.com/suyogbankar/jenkins-docker-image-ecr-push.git']]
+                    userRemoteConfigs: [[credentialsId: 'new-aws-ecr-project', url: 'https://github.com/suyogbankar/jenkins-docker-image-ecr-push.git']]
                 ])
             }
         }
